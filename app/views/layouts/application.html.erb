@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Login</title>
+	    <%= csrf_meta_tags %>
+	        <!-- Google Icons-->
+	        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	        <!-- Compiled and minified CSS -->
+	        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+            <!-- Google jQuery cdn -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	        <!-- Compiled and minified JavaScript -->
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	</head>
+	<body>
+	    <!-- NavBar-->
+	    <nav>
+	        <div class="nav-wrapper">
+	            <a href="#" class="brand-logo">GKM IT</a>
+	                <ul id="nav-mobile" class="right hide-on-med-and-down">
+	                    <li><a href="gkmit.html">GKM IT</a></li>
+	                    <li><a href="aboutus.html">About Us</a></li>
+	                    <li><a href="contactus.html">Contact Us</a></li>
+	                    <li><a href="logout.html">Log Out</a></li>
+	                </ul>
+	        </div>
+	    </nav>
+
+	    <p class="notice"><%= notice %></p>
+	    <p class="alert"><%= alert %></p>
+	    <%= yield %>
+	</body>
+</html>

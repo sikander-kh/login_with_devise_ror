@@ -21,11 +21,11 @@
 	    <nav>
 	        <div class="nav-wrapper">
 	            <a href="#" class="brand-logo">GKM IT</a>
-	                <ul id="nav-mobile" class="right hide-on-med-and-down">
-	                    <li><a href="gkmit.html">GKM IT</a></li>
-	                    <li><a href="aboutus.html">About Us</a></li>
-	                    <li><a href="contactus.html">Contact Us</a></li>
-	                    <li><a href="logout.html">Log Out</a></li>
+	              <ul id="nav-mobile" class="right hide-on-med-and-down">
+	                <li><a href="gkmit.html">GKM IT</a></li>
+	                  <li><a href="aboutus.html">About Us</a></li>
+	                  <li><a href="contactus.html">Contact Us</a></li>
+	                  <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
 	                </ul>
 	        </div>
 	    </nav>
